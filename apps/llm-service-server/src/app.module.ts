@@ -4,6 +4,8 @@ import { redisStore } from "cache-manager-ioredis-yet";
 import { ConversationModule } from "./conversation/conversation.module";
 import { MessageModule } from "./message/message.module";
 import { SearchQueryModule } from "./searchQuery/searchQuery.module";
+import { SearchModule } from "./search/search.module";
+import { SpeechModule } from "./speech/speech.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -19,6 +21,8 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
     ConversationModule,
     MessageModule,
     SearchQueryModule,
+    SearchModule,
+    SpeechModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
